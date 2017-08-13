@@ -1,1 +1,0 @@
-SumatraPDF ..\main.pdf
