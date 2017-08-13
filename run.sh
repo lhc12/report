@@ -1,3 +1,3 @@
 #! /bin/zsh
 
-okular lab_report.pdf
+okular main.pdf

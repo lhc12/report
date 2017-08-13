@@ -3,6 +3,6 @@ BIB=bibtex
 
 main.pdf:
 	cd ..
-	$(TEX) main
+	$(TEX) main.tex
 	$(BIB) main
 
