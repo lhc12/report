@@ -19,7 +19,7 @@
 %	PACKAGES AND DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{article}
+\documentclass[11pt, a4paper]{article}
 
 %\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
@@ -37,11 +37,11 @@
 \usepackage{booktabs}
 
 \usepackage{geometry}
-\geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \graphicspath{{images/}{figures/}}
 
-\includeonly{sections/coverage,sections/introduction,sections/methods,sections/results,sections/conclusion}
+\includeonly{sections/titlepage,sections/introduction,sections/methods,sections/results,sections/conclusion}
 
 \linespread{1.2}
 
@@ -55,11 +55,9 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\input{sections/title}
-
 \begin{document}
 
-\include{sections/coverage}
+\include{sections/titlepage}
 
 \tableofcontents
 
