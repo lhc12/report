@@ -19,14 +19,16 @@
 %	PACKAGES AND DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper]{article}
+\documentclass[12pt,a4paper]{report}
 
 %\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
 %\usepackage{natbib} % Required to change bibliography style to APA
-\usepackage{amsmath} % Required for some math elements 
-\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{indentfirst}
 \usepackage{subcaption}
 \usepackage{wrapfig}
@@ -41,7 +43,7 @@
 
 \graphicspath{{images/}{figures/}}
 
-\includeonly{sections/titlepage,sections/introduction,sections/methods,sections/results,sections/conclusion}
+\includeonly{sections/titlepage,sections/abstract,sections/introduction,sections/methods,sections/results,sections/conclusion}
 
 \linespread{1.2}
 
@@ -58,6 +60,8 @@
 \begin{document}
 
 \include{sections/titlepage}
+
+\include{sections/abstract}
 
 \tableofcontents
 
