@@ -19,16 +19,17 @@
 %	PACKAGES AND DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper,oneside]{report}
 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
 %\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 %\usepackage{natbib} % Required to change bibliography style to APA
-\usepackage{amsmath}
-\usepackage{amssymb}
 \usepackage{indentfirst}
 \usepackage{subcaption}
 \usepackage{wrapfig}
@@ -39,15 +40,15 @@
 \usepackage{booktabs}
 
 \usepackage{geometry}
-\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
 
 \graphicspath{{figures/}}
 
-\includeonly{sections/titlepage,sections/abstract,sections/introduction,sections/methods,sections/results,sections/conclusion}
+\includeonly{data/titlepage,data/abstract,data/introduction,data/methods,data/results,data/conclusion}
 
 \linespread{1.2}
-
-%\setlength\parindent{0pt} % Removes all indentation from paragraphs
+%\setlength{\parskip}{1.2\baselineskip}
+\setlength\parindent{4ex}
 
 \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
 
@@ -59,9 +60,9 @@
 
 \begin{document}
 
-\include{sections/titlepage}
+\include{data/titlepage}
 
-\include{sections/abstract}
+\include{data/abstract}
 
 \tableofcontents
 
@@ -69,25 +70,25 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\include{sections/introduction}
+\include{data/introduction}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\include{sections/methods}
+\include{data/methods}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 
-\include{sections/results}
+\include{data/results}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\include{sections/conclusion}
+\include{data/conclusion}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
