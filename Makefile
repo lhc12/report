@@ -1,2 +1,5 @@
-main.pdf: main.tex main.aux sections/*.tex sections/*.aux
-	pdflatex main.tex
+main.pdf: main.tex main.bbl data/*.tex
+	pdflatex main
+
+main.bbl: main.bib
+	bibtex main

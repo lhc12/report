@@ -44,7 +44,7 @@
 
 \graphicspath{{figures/}}
 
-\includeonly{data/titlepage,data/abstract,data/introduction,data/methods,data/results,data/conclusion}
+\includeonly{data/00-titlepage,data/00-abstract,data/01-chapter01,data/02-chapter02,data/03-chapter03,data/04-chapter04}
 
 \linespread{1.2}
 %\setlength{\parskip}{1.2\baselineskip}
@@ -60,9 +60,9 @@
 
 \begin{document}
 
-\include{data/titlepage}
+\include{data/00-titlepage}
 
-\include{data/abstract}
+\include{data/00-abstract}
 
 \tableofcontents
 
@@ -70,31 +70,31 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\include{data/introduction}
+\include{data/01-chapter01}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\include{data/methods}
+\include{data/02-chapter02}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 
-\include{data/results}
+\include{data/03-chapter03}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\include{data/conclusion}
+\include{data/04-chapter04}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\bibliographystyle{unsrt}
+\bibliographystyle{revtex4-1}
 
 \bibliography{main}
 
