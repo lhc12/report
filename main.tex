@@ -19,11 +19,12 @@
 %	PACKAGES AND DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[12pt,a4paper,oneside]{report}
+\documentclass[11pt,a4paper,oneside]{report}
 
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
 %\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
@@ -39,16 +40,15 @@
 \usepackage{url}
 \usepackage{booktabs}
 
-\usepackage{geometry}
-%\geometry{a4paper,scale=0.8}
-\geometry{a4paper,left=1in,right=1in,top=1in,bottom=1in}
+\geometry{a4paper,scale=0.8}
+%\geometry{a4paper,left=1in,right=1in,top=1in,bottom=1in}
 
 \graphicspath{{figures/}}
 
 \includeonly{data/00-titlepage,data/00-abstract,data/01-chapter01,data/02-chapter02,data/03-chapter03,data/04-chapter04}
 
-\linespread{1.2}
-%\setlength{\parskip}{1.2\baselineskip}
+\onehalfspacing
+
 \setlength\parindent{4ex}
 
 \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
@@ -63,9 +63,21 @@
 
 \include{data/00-titlepage}
 
+\clearpage\thispagestyle{empty}\null\clearpage
+
 \include{data/00-abstract}
 
+\clearpage\thispagestyle{empty}\null\clearpage
+
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
 \tableofcontents
+
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -95,7 +107,7 @@
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\bibliographystyle{revtex4-1}
+\bibliographystyle{unsrt}
 
 \bibliography{main}
 
