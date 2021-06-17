@@ -19,19 +19,20 @@
 %	PACKAGES AND DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[12pt,a4paper,twoside,openright]{report}
 
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \usepackage{geometry}
 \usepackage{setspace}
+\usepackage{nomencl}
 %\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 %\usepackage{natbib} % Required to change bibliography style to APA
-\usepackage{indentfirst}
+%\usepackage{indentfirst}
 \usepackage{subcaption}
 \usepackage{wrapfig}
 \usepackage{multirow}
@@ -40,14 +41,16 @@
 \usepackage{url}
 \usepackage{booktabs}
 
-\geometry{a4paper,scale=0.8}
-%\geometry{a4paper,left=1in,right=1in,top=1in,bottom=1in}
+%\geometry{a4paper,scale=0.8}
+\geometry{a4paper,left=1.6in,right=1.2in,top=1.2in,bottom=1.2in}
 
 \graphicspath{{figures/}}
 
-\includeonly{data/00-titlepage,data/00-abstract,data/01-chapter01,data/02-chapter02,data/03-chapter03,data/04-chapter04}
+\includeonly{data/00-titlepage,data/00-abstract,data/00-nomenclature,data/01-chapter01,data/02-chapter02,data/03-chapter03,data/04-chapter04}
 
 \onehalfspacing
+
+\makenomenclature
 
 \setlength\parindent{4ex}
 
@@ -60,24 +63,26 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+	
+\pagenumbering{gobble}
 
 \include{data/00-titlepage}
 
-\clearpage\thispagestyle{empty}\null\clearpage
+\cleardoublepage
 
-\include{data/00-abstract}
+%\include{data/00-abstract}\BlankPage
 
-\clearpage\thispagestyle{empty}\null\clearpage
-
-\pagenumbering{Roman}
-\setcounter{page}{1}
+\pagenumbering{Roman}\setcounter{page}{1}
 
 \tableofcontents
 
-\clearpage
+\cleardoublepage
 
-\pagenumbering{arabic}
-\setcounter{page}{1}
+\pagenumbering{arabic}\setcounter{page}{1}
+
+\include{data/00-nomenclature}
+
+\printnomenclature
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -107,7 +112,7 @@
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\bibliographystyle{unsrt}
+\bibliographystyle{abbrv}
 
 \bibliography{main}
 

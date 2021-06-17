@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{einstein1905electrodynamics}
+A.~Einstein et~al.
+\newblock On the electrodynamics of moving bodies.
+\newblock {\em Annalen der physik}, 17(10):891--921, 1905.
 
 \end{thebibliography}

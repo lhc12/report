@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1623771814 "01-chapter01.tex" "01-chapter01.pdf" "01-chapter01" 1623771814
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1617738065 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1623169968 5057169 2f2d0129c804868402dab20ca9aca579 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1623169949 2812681 5c9c94618e230bce326ffa0ac9cc538a ""
+  "01-chapter01.aux" 1623757499 1443 fa8d845244584076fbb67ea1412d52eb ""
+  "01-chapter01.tex" 1623757498 1782 ab8f617ea54c0efd76f0aa57acd14810 ""
+  (generated)
+  "01-chapter01.log"
+  "01-chapter01.pdf"

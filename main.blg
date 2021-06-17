@@ -1,54 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: data/00-titlepage.aux
-A level-1 auxiliary file: data/00-abstract.aux
+A level-1 auxiliary file: data/00-nomenclature.aux
 A level-1 auxiliary file: data/01-chapter01.aux
 A level-1 auxiliary file: data/02-chapter02.aux
 A level-1 auxiliary file: data/03-chapter03.aux
 A level-1 auxiliary file: data/04-chapter04.aux
-The style file: unsrt.bst
-I found no \citation commands---while reading file main.aux
+The style file: abbrv.bst
 Database file #1: main.bib
-You've used 0 entries,
-            1791 wiz_defined-function locations,
-            450 strings with 3631 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            510 strings with 3953 characters,
+and the built_in function-call counts, 350 in all, are:
+= -- 35
+> -- 13
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 5
+- -- 4
+* -- 27
+:= -- 64
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 1
+duplicate$ -- 11
+empty$ -- 28
+format.name$ -- 4
+if$ -- 69
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 2
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 3
 quote$ -- 0
-skip$ -- 1
+skip$ -- 9
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 30
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 4
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 4
+width$ -- 2
+write$ -- 13
